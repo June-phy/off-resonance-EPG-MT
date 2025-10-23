@@ -1,4 +1,4 @@
-# Pulsed Off-Resonance MT with Intrinsic Blood Suppression - Simulation Code
+# Pulsed Off-Resonance MT with Intrinsic Blood Suppression - EPG-MT code
 
 This repository contains MATLAB simulation code for the paper:
 
@@ -42,7 +42,7 @@ This repository provides the simulation framework for magnetization transfer (MT
 
 If you use this code or results in your research, please cite our paper:
 
-> Shan Q, Wong V, Yu Z, Gao Z, Shen Q, Liu C, Chan Q, Chu WCW, Chen W. Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results. Magn Reson Med. 2025 Dec;94(6):3001-3015. doi: 10.1002/mrm.80025. Epub 2025 Aug 1. PMID: 40987654.
+> Shan Q, Wong V, Yu Z, Gao Z, Shen Q, Liu C, Chan Q, Chu WCW, Chen W. Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results. ISMRM2026
 
 ---
 
