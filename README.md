@@ -15,11 +15,11 @@ This repository provides the simulation framework for magnetization transfer (MT
 - `Figure2.m`: Generates results for Figure 2 in the paper.  
   **Description:** Validates the off-resonance EPG-MT simulation against the 1000-isochromat Bloch-McConnell (BM) model using liver and blood parameters. The EPG-MT model produces consistent results with significantly improved computational efficiency.  
   **Parameters:**  
-  - \( \omega_1 = 100 \, \text{Hz} \), \( \Delta\omega = 1000 \, \text{Hz} \), \( t_p = 0.7 \, \text{ms} \), \( t_d = 1 \, \text{ms} \)  
-  - \( N_p = 200 \), \( t_g = 1 \, \text{ms} \), \( G_z = 5 \, \text{mT/m} \), and uniform \( B_1 \) (scale = 1).
+  - $\omega_1 = 100 \text{Hz} $, $ \Delta\omega = 1000 \text{Hz} $, $t_p = 0.7 \text{ms} $, $ t_d = 1 \text{ms}$ 
+  - $N_p = 200 $, $ t_g = 1  \text{ms} $, $ G_z = 5 \text{mT/m} $, and uniform $B_1 $ (scale = 1).
 
 - `Figure3.m`: Generates results for Figure 3 in the paper.  
-  **Description:** Analyzes blood suppression based on flow direction, gradient amplitude (\( G_z \)), pulse number (\( N_p \)), and \( B_1 \) inhomogeneity. Blood suppression depends on the flow direction and increases with greater \( G_z \) and \( N_p \). \( B_1 \) inhomogeneity has partial effects.  
+  **Description:** Analyzes blood suppression based on flow direction, gradient amplitude ($ G_z $), pulse number (\( N_p \)), and \( B_1 \) inhomogeneity. Blood suppression depends on the flow direction and increases with greater \( G_z \) and \( N_p \). \( B_1 \) inhomogeneity has partial effects.  
   **Parameters:** Follows the settings in Figure 2 unless otherwise noted.
 
 - `Figure4.m`: Generates results for Figure 4 in the paper.  
