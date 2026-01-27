@@ -57,13 +57,13 @@ The `abstract/` folder contains code from the original ISMRM 2026 submission:
 
 - **Off-resonance EPG-MT Framework**: Extends the EPG formalism to incorporate off-resonance MT effects using rotation theory, providing efficient simulation compared to isochromat-based methods
 - **Intrinsic Flow Suppression**: Achieves blood signal attenuation through cumulative phase dispersion from gradient pulses combined with RF pulse trains
-- **Quantitative MPF Mapping**: Enables macromolecular proton fraction quantification insensitive to free water pool parameters (T1a, T2a)
+- **Quantitative MPF Mapping**: Enables macromolecular proton fraction quantification
 
 ---
 
 ## Requirements
 
-- MATLAB R2024a or later (MathWorks, Natick, MA, USA)
+- MATLAB (MathWorks, Natick, MA, USA)
 
 ---
 
