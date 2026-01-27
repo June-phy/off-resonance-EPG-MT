@@ -1,44 +1,111 @@
-# Pulsed Off-Resonance MT with Intrinsic Blood Suppression - EPG-MT code
+# MPF Mapping with Intrinsic Flow Suppression using Pulsed Saturation
 
-This repository contains MATLAB simulation code for the paper:
-
-**"Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results"**  
-Authors: Qianxue Shan, Vincent Wong, Ziqiang Yu, Zijian Gao, Qiuyi Shen, Chun Liu, Queenie Chan, Winnie Chu, Weitian Chen
+This repository contains MATLAB simulation code for the off-resonance Extended Phase Graph with Magnetization Transfer (EPG-MT) framework, supporting both conference and journal publications.
 
 ---
 
-## Description
+## Publications
 
-This repository provides the simulation framework for magnetization transfer (MT) imaging with intrinsic blood suppression using a pulsed off-resonance MT approach. The approach is modeled using an Extended Phase Graph (EPG) framework, enabling efficient exploration of sequence and physiological parameters.  
+### Journal Paper (MRM)
+**"Macromolecular Proton Fraction Mapping with Intrinsic Flow Suppression using Pulsed Saturation"**  
+*Magnetic Resonance in Medicine*, 2026
 
-### File List
-- `Figure2.m`: Generates results for Figure 2 in the paper.  
-  **Description:** Validates the off-resonance EPG-MT simulation against the 1000-isochromat Bloch-McConnell (BM) model using liver and blood parameters. The EPG-MT model produces consistent results with significantly improved computational efficiency.  
+This paper presents MPF-SPS (MPF mapping using Short Pulsed Saturation), a method that integrates pulsed off-resonance MT preparation with intrinsic blood signal suppression for quantitative macromolecular proton fraction mapping.
 
-- `Figure3.m`: Generates results for Figure 3 in the paper.  
-  **Description:** Analyzes blood suppression based on flow direction, gradient amplitude, pulse number, and $B_1$ inhomogeneity. Blood suppression depends on the flow direction and increases with greater $G_z$ and $N_p$. $B_1$ inhomogeneity has partial effects.  
-  
+### Conference Abstract (ISMRM 2026)
+**"Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results"**  
+*ISMRM 2026*
 
-- `Figure4.m`: Generates results for Figure 4 in the paper.  
-  **Description:** Investigates blood suppression across $\omega_1$, $\Delta\omega$, $t_p$, and $t_d$.  
- 
-### Supporting Functions
-- `epgmt_Ex_Relax.m`: Models exchange and relaxation effects in the EPG framework.  
-- `epgmt_Flow.m`: Simulates flow-induced phase shifts.  
-- `epgmt_Grad.m`: Applies gradient-induced dephasing to the EPG states.  
-- `epgmt_RF.m`: Simulates RF pulse effects, including off-resonance and phase cycling.  
-- `RF_MT.m`: Computes saturation rates for different lineshapes, including SuperLorentzian, Gaussian, and Lorentzian.
+---
+
+## Repository Structure
+
+├── paper/ # Code for MRM journal paper
+│ ├── Figure2.m # Validation of MT rotation matrix formalism
+│ ├── Figure3.m # Validation of off-resonance EPG-MT model
+│ ├── Figure4.m # Flow suppression vs direction, gradient, Np, B1
+│ ├── Figure5.m # Flow suppression vs ω1, Δω, tp, td
+│ ├── Figure6.m # Tissue-dependent flow suppression
+│ ├── Figure7.m # Partial volume effect reduction
+│ ├── Figure8.m # Rmpfsps sensitivity to tissue parameters
+│ └── ...
+├── abstract/ # Code for ISMRM abstract
+│ ├── Figure2.m
+│ ├── Figure3.m
+│ ├── Figure4.m
+│ └── ...
+├── functions/ # Shared supporting functions
+│ ├── epgmt_Ex_Relax.m # Exchange and relaxation in EPG framework
+│ ├── epgmt_Flow.m # Flow-induced phase shifts
+│ ├── epgmt_Grad.m # Gradient-induced dephasing
+│ ├── epgmt_RF.m # RF pulse effects with off-resonance
+│ └── RF_MT.m # MT saturation rates for different lineshapes
+└── README.md
+
+---
+
+## Paper Simulation Studies
+
+The `paper/` folder contains code reproducing all simulation studies from the MRM paper:
+
+| Figure | Description |
+|--------|-------------|
+| Figure 2 | Validates the proposed MT rotation matrix formalism (Eq. 1) against full Bloch-McConnell equations across different frequency offsets and RF amplitudes |
+| Figure 3 | Validates the off-resonance EPG-MT model and demonstrates flow suppression for white matter and blood at various velocities |
+| Figure 4 | Analyzes flow suppression performance as a function of flow direction (θ), gradient strength (Gz), number of pulses (Np), and B1 scale |
+| Figure 5 | Investigates flow suppression across ω1, Δω, tp, and td parameter space for sequence optimization |
+| Figure 6 | Demonstrates tissue-dependent flow suppression characteristics showing blood attenuates faster than brain parenchyma |
+| Figure 7 | Validates reduction of partial volume effects from intravascular signal contamination |
+| Figure 8 | Characterizes Rmpfsps sensitivity to tissue parameters (T1a, T2a, T2b, kba, fb) |
+
+---
+
+## Abstract Simulation Studies
+
+The `abstract/` folder contains code from the original ISMRM 2026 submission:
+
+| Figure | Description |
+|--------|-------------|
+| Figure 2 | Validates EPG-MT simulation against 1000-isochromat Bloch-McConnell model |
+| Figure 3 | Analyzes blood suppression based on flow direction, gradient amplitude, pulse number, and B1 inhomogeneity |
+| Figure 4 | Investigates blood suppression across ω1, Δω, tp, and td |
+
+---
+
+## Key Features
+
+- **Off-resonance EPG-MT Framework**: Extends the EPG formalism to incorporate off-resonance MT effects using rotation theory, providing efficient simulation compared to isochromat-based methods
+- **Intrinsic Flow Suppression**: Achieves blood signal attenuation through cumulative phase dispersion from gradient pulses combined with RF pulse trains
+- **Quantitative MPF Mapping**: Enables macromolecular proton fraction quantification insensitive to free water pool parameters (T1a, T2a)
+
+---
+
+## Requirements
+
+- MATLAB R2024a or later (MathWorks, Natick, MA, USA)
 
 ---
 
 ## Citation
 
-If you use this code or results in your research, please cite our paper:
+If you use this code in your research, please cite:
 
-> Shan Q, Wong V, Yu Z, Gao Z, Shen Q, Liu C, Chan Q, Chu WCW, Chen W. Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results. ISMRM2026
+**Journal Paper:**
+> Author One, Author Two, Author Three. Macromolecular Proton Fraction Mapping with Intrinsic Flow Suppression using Pulsed Saturation. *Magnetic Resonance in Medicine*. 2026.
+
+**Conference Abstract:**
+> Shan Q, Wong V, Yu Z, Gao Z, Shen Q, Liu C, Chan Q, Chu WCW, Chen W. Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results. *ISMRM 2026*.
 
 ---
 
 ## License
 
 This code is for academic and research purposes only. Commercial use or redistribution is strictly prohibited without explicit written permission from the authors.
+
+---
+
+## Contact
+
+For questions regarding this code, please contact:
+- Weitian Chen: wtchen@cuhk.edu.hk
+- Department of Imaging and Interventional Radiology, The Chinese University of Hong Kong
