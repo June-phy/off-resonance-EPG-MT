@@ -10,7 +10,7 @@ This repository contains MATLAB simulation code for the off-resonance Extended P
 **"Macromolecular Proton Fraction Mapping with Intrinsic Flow Suppression using Pulsed Saturation"**  
 *Magnetic Resonance in Medicine*, 2026
 
-This paper presents MPF-SPS (MPF mapping using Short Pulsed Saturation), a method that integrates pulsed off-resonance MT preparation with intrinsic blood signal suppression for quantitative macromolecular proton fraction mapping.
+This paper presents MPF-SPS (MPF mapping using Short Pulsed Saturation), a method that integrates pulsed off-resonance MT preparation with intrinsic flow signal suppression for quantitative macromolecular proton fraction mapping.
 
 ### Conference Abstract (ISMRM 2026)
 **"Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results"**  
