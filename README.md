@@ -18,29 +18,10 @@ This paper presents MPF-SPS (MPF mapping using Short Pulsed Saturation), a metho
 
 ---
 
-## Repository Structure
-
-├── paper/ # Code for MRM journal paper
-│ ├── Figure2.m # Validation of MT rotation matrix formalism
-│ ├── Figure3.m # Validation of off-resonance EPG-MT model
-│ ├── Figure4.m # Flow suppression vs direction, gradient, Np, B1
-│ ├── Figure5.m # Flow suppression vs ω1, Δω, tp, td
-│ ├── Figure6.m # Tissue-dependent flow suppression
-│ ├── Figure7.m # Partial volume effect reduction
-│ ├── Figure8.m # Rmpfsps sensitivity to tissue parameters
-│ └── ...
-├── abstract/ # Code for ISMRM abstract
-│ ├── Figure2.m
-│ ├── Figure3.m
-│ ├── Figure4.m
-│ └── ...
-├── functions/ # Shared supporting functions
-│ ├── epgmt_Ex_Relax.m # Exchange and relaxation in EPG framework
-│ ├── epgmt_Flow.m # Flow-induced phase shifts
-│ ├── epgmt_Grad.m # Gradient-induced dephasing
-│ ├── epgmt_RF.m # RF pulse effects with off-resonance
-│ └── RF_MT.m # MT saturation rates for different lineshapes
-└── README.md
+**Folder Descriptions:**
+- `paper/` — Code for MRM journal paper figures
+- `abstract/` — Code for ISMRM abstract figures
+- `functions/` — Shared supporting functions for EPG-MT simulation
 
 ---
 
@@ -48,15 +29,15 @@ This paper presents MPF-SPS (MPF mapping using Short Pulsed Saturation), a metho
 
 The `paper/` folder contains code reproducing all simulation studies from the MRM paper:
 
-| Figure | Description |
-|--------|-------------|
-| Figure 2 | Validates the proposed MT rotation matrix formalism (Eq. 1) against full Bloch-McConnell equations across different frequency offsets and RF amplitudes |
-| Figure 3 | Validates the off-resonance EPG-MT model and demonstrates flow suppression for white matter and blood at various velocities |
-| Figure 4 | Analyzes flow suppression performance as a function of flow direction (θ), gradient strength (Gz), number of pulses (Np), and B1 scale |
-| Figure 5 | Investigates flow suppression across ω1, Δω, tp, and td parameter space for sequence optimization |
-| Figure 6 | Demonstrates tissue-dependent flow suppression characteristics showing blood attenuates faster than brain parenchyma |
-| Figure 7 | Validates reduction of partial volume effects from intravascular signal contamination |
-| Figure 8 | Characterizes Rmpfsps sensitivity to tissue parameters (T1a, T2a, T2b, kba, fb) |
+| Figure         | Description |
+|:---------------|:------------|
+| Figure 2       | Validates the proposed MT rotation matrix formalism (Eq. 1) against full Bloch-McConnell equations across different frequency offsets and RF amplitudes |
+| Figure 3       | Validates the off-resonance EPG-MT model and demonstrates flow suppression for white matter and blood at various velocities |
+| Figure 4       | Analyzes flow suppression performance as a function of flow direction (θ), gradient strength (Gz), number of pulses (Np), and B1 scale |
+| Figure 5       | Investigates flow suppression across ω1, Δω, tp, and td parameter space for sequence optimization |
+| Figure 6       | Demonstrates tissue-dependent flow suppression characteristics showing blood attenuates faster than brain parenchyma |
+| Figure 7       | Validates reduction of partial volume effects from intravascular signal contamination |
+| Figure 8       | Characterizes Rmpfsps sensitivity to tissue parameters (T1a, T2a, T2b, kba, fb) |
 
 ---
 
@@ -64,11 +45,11 @@ The `paper/` folder contains code reproducing all simulation studies from the MR
 
 The `abstract/` folder contains code from the original ISMRM 2026 submission:
 
-| Figure | Description |
-|--------|-------------|
-| Figure 2 | Validates EPG-MT simulation against 1000-isochromat Bloch-McConnell model |
-| Figure 3 | Analyzes blood suppression based on flow direction, gradient amplitude, pulse number, and B1 inhomogeneity |
-| Figure 4 | Investigates blood suppression across ω1, Δω, tp, and td |
+| Figure         | Description |
+|:---------------|:------------|
+| Figure 2       | Validates EPG-MT simulation against 1000-isochromat Bloch-McConnell model |
+| Figure 3       | Analyzes blood suppression based on flow direction, gradient amplitude, pulse number, and B1 inhomogeneity |
+| Figure 4       | Investigates blood suppression across ω1, Δω, tp, and td |
 
 ---
 
