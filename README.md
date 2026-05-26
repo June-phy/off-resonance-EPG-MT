@@ -72,7 +72,7 @@ The `abstract/` folder contains code from the original ISMRM 2026 submission:
 If you use this code in your research, please cite:
 
 **Journal Paper:**
-> Author One, Author Two, Author Three. Macromolecular Proton Fraction Mapping with Intrinsic Flow Suppression using Pulsed Saturation. *Magnetic Resonance in Medicine*. 2026.
+> Shan Q, Gao Z, Liu C, Chan Q, Shen Q, Yu Z, Chen W. Macromolecular Proton Fraction Mapping with Intrinsic Flow Suppression using Pulsed Saturation. *Magnetic Resonance in Medicine*. 2026.
 
 **Conference Abstract:**
 > Shan Q, Wong V, Yu Z, Gao Z, Shen Q, Liu C, Chan Q, Chu WCW, Chen W. Pulsed Off-Resonance MT with Intrinsic Blood Suppression: Modeling with an Extended EPG Framework and Experimental Results. *ISMRM 2026*.
