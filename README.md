@@ -32,12 +32,10 @@ The `paper/` folder contains code reproducing all simulation studies from the MR
 | Figure         | Description |
 |:---------------|:------------|
 | Figure 2       | Validates the proposed MT rotation matrix formalism against full Bloch-McConnell equations across different frequency offsets and RF amplitudes |
-| Figure 3       | Validates the off-resonance EPG-MT model and demonstrates flow suppression for white matter and blood at various velocities |
-| Figure 4       | Analyzes flow suppression performance as a function of flow direction (θ), gradient strength (Gz), number of pulses (Np), and B1 scale |
-| Figure 5       | Investigates flow suppression across ω1, Δω, tp, and td parameter space for sequence optimization |
-| Figure 6       | Demonstrates tissue-dependent flow suppression characteristics showing blood attenuates faster than brain parenchyma |
-| Figure 7       | Validates reduction of partial volume effects from intravascular signal contamination |
-| Figure 8       | Characterizes Rmpfsps sensitivity to tissue parameters (T1a, T2a, T2b, kba, fb) |
+| Figure 3       | Analyzes flow suppression performance as a function of flow direction (θ), gradient strength (Gz), number of pulses (Np), and B1 scale |
+| Figure 4       | Investigates flow suppression across ω1, Δω, tp, and td parameter space for sequence optimization |
+| Figure 5       | Validates reduction of partial volume effects from intravascular signal contamination |
+| Figure 6       | Characterizes Rmpfsps sensitivity to tissue parameters (T1a, T2a, T2b, kba, fb) |
 
 ---
 
